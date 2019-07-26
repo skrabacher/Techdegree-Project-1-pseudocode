@@ -47,15 +47,17 @@ var quotes = [
 
     
 
-//function below returns a random integer from zero to eleven
+
 function getRandomQuote() {
-var randomNumber = Math.floor( Math.random() * 12 ); 
-return quotes[randomNumber]; //use the random number and box notation to grab a random item from the quotes array
-// return the random item
+    var randomNumber = Math.floor( Math.random() * quotes ); //returns a random integer from zero to eleven
+    print.console (quotes[randomNumber]); //use the random number and box notation to grab a random item from the quotes array
+    // return the random item
 };
-console.log(getRandomQuote);
+
+getRandomQuote();
 
 
 //function getRandomQuote() {
 //    window.alert( quotes[randomNumber]); //***/should this be document.write instead of window.alert?? need to add to html file or js file?
 //};
+// console.log(getRandomQuote);
